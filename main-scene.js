@@ -67,12 +67,12 @@ class Body // Store and update the properties of a 3D body that increntally move
 
 class Test_Data {
   constructor(context) {
-    this.textures = { //rgb   : context.get_instance( "/assets/rgb.jpg"   ),
-      //earth : context.get_instance( "/assets/earth.gif" ),
-      //grid  : context.get_instance( "/assets/grid.png"  ),
-      //stars : context.get_instance( "/assets/stars.png" ),
-      fire: context.get_instance("/assets/fire.jpg")
-      //text  : context.get_instance( "/assets/text.png"  )
+    this.textures = { //rgb   : context.get_instance( "/Schrodinger-s-Cat/assets/rgb.jpg"   ),
+      //earth : context.get_instance( "/Schrodinger-s-Cat/assets/earth.gif" ),
+      //grid  : context.get_instance( "/Schrodinger-s-Cat/assets/grid.png"  ),
+      //stars : context.get_instance( "/Schrodinger-s-Cat/assets/stars.png" ),
+      fire: context.get_instance("/Schrodinger-s-Cat/assets/fire.jpg")
+      //text  : context.get_instance( "/Schrodinger-s-Cat/assets/text.png"  )
     }
     this.shapes = { //donut  : new Torus          ( 15, 15 ),
       //cone   : new Closed_Cone    ( 4, 10 ),
@@ -488,10 +488,10 @@ window.Assignment_One_Scene = window.classes.Assignment_One_Scene =
         'box': new Cube(),
         'square': new Square(),
         'bump_box': new Cube2(),
-        'cat': new Shape_From_File("/assets/cat.obj"),
-        'ufo': new Shape_From_File("/assets/ufo.obj"),
-        'dog': new Shape_From_File("/assets/dog.obj"),
-        'terrain': new Shape_From_File("/assets/terrain.obj"), // At the beginning of our program, load one of each of these shape
+        'cat': new Shape_From_File("/Schrodinger-s-Cat/assets/cat.obj"),
+        'ufo': new Shape_From_File("/Schrodinger-s-Cat/assets/ufo.obj"),
+        'dog': new Shape_From_File("/Schrodinger-s-Cat/assets/dog.obj"),
+        'terrain': new Shape_From_File("/Schrodinger-s-Cat/assets/terrain.obj"), // At the beginning of our program, load one of each of these shape
         'strip': new Cube_Single_Strip(), // definitions onto the GPU.  NOTE:  Only do this ONCE per shape
         'outline': new Cube_Outline(),
         'sphere': new(Subdivision_Sphere)(4),
@@ -589,27 +589,27 @@ window.Assignment_One_Scene = window.classes.Assignment_One_Scene =
         ambient: .3,
         diffusivity: .8,
         specularity: .8,
-        texture: context.get_instance("/assets/cat_diff.png")
+        texture: context.get_instance("/Schrodinger-s-Cat/assets/cat_diff.png")
       });
       this.ufo_texture = context.get_instance(Phong_Shader).material(Color.of(0.68,1,0.18, 1), {
         ambient: .3,
         diffusivity: .9,
         specularity: .9,
-        texture: context.get_instance("/assets/ufo_texture.png")
+        texture: context.get_instance("/Schrodinger-s-Cat/assets/ufo_texture.png")
       });
       //0.2, 0.2, 0.2, 1
       this.terrain_color = context.get_instance(Phong_Shader).material(Color.of(0.1, 0.8, 0.2, 1), {
         ambient: .3,
         diffusivity: .1,
         specularity: .3,
-        texture: context.get_instance("/assets/terrain.png")
+        texture: context.get_instance("/Schrodinger-s-Cat/assets/terrain.png")
       });
       this.canvas = context.canvas;
       this.dog_fur = context.get_instance(Phong_Shader).material(Color.of(.5, .5, .5, 1), {
         ambient: .3,
         diffusivity: .8,
         specularity: .8,
-        texture: context.get_instance("/assets/dog_fur.png")
+        texture: context.get_instance("/Schrodinger-s-Cat/assets/dog_fur.png")
       });
       //         this.lights = [ new Light( Vec.of( 0,5,5,1 ), Color.of( 1, .4, 1, 1 ), 100000 ) ];
       this.lights = [new Light(Vec.of(0, 5, 5, 1), Color.of(1, 1, 1, 1), 100000)];
