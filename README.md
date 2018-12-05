@@ -1,5 +1,8 @@
-# Schrodinger-s-Cat
-Scavenger Hunt Game made with WebGL
+# Schrödinger's Cat Game
+## Scavenger Hunt Game made with WebGL
+## You do not know whether the cat is dead or not. 
+## Find your treasure or lost yourself in entangled states. Good Luck. 
+
 
 ### Team members:
 ```
